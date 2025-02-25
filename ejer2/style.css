@@ -1,0 +1,62 @@
+body {
+    margin: 0 auto
+}
+
+.grid {
+    display: flex;
+    min-height: 25px;
+    border: 1px solid red;
+}
+  
+.grid--wrap {
+    flex-wrap: wrap;
+}
+
+[class^="grid-item"] {
+    height: 120px;
+    background-color: orange;
+    border: 1px solid green;
+}
+
+.content {
+    height: 1000px
+}
+
+.grid-item25 {
+    flex: 0 0 25%;
+}
+
+.grid-item50 {
+    flex:0 0 50%;
+}
+
+.grid-item75 {
+    flex:0 0 75%;
+}
+
+.grid-item100 {
+    flex:0 0 100%;
+}
+
+/* Align the grid items horizontally */
+.align-content-right {
+    justify-content: flex-end;
+}
+
+/* Align individuals vertically */
+.align-item-top {
+    align-items: flex-start;
+}
+
+.align-item-center {
+    align-items: center;
+}
+
+.align-item-bottom {
+    align-items: flex-end;
+}
+
+/* Component */
+.sticky-footer {
+    align-self: flex-end;
+}
