@@ -1,25 +1,26 @@
-body {
-    margin: 0 auto
+* {
+    box-sizing: border-box;
+}
+
+.border {
+    border: 1px solid red;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .grid {
     display: flex;
     min-height: 25px;
-    border: 1px solid red;
 }
   
 .grid--wrap {
     flex-wrap: wrap;
 }
 
-[class^="grid-item"] {
+[class^="grid-item"]:not([class*=" "]) {
     height: 120px;
     background-color: orange;
     border: 1px solid green;
-}
-
-.content {
-    height: 1000px
 }
 
 .grid-item25 {
