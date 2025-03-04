@@ -25,6 +25,10 @@
         background-color: #333;
         color: #fff;
         border: 5px solid #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
       }
 
       header ul {
@@ -46,6 +50,30 @@
         font-style: italic;
         font-weight: bold;
         padding: 1em;
+      }
+
+      header .menu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+      }
+
+      header .display-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 6px;
+        width: 100px;
+        height: 100px;
+        background-color: #333;
+      }
+
+      .display-button div {
+        width: 35px;
+        height: 5px;
+        background-color: white;
       }
 
       main {
@@ -81,12 +109,42 @@
         color: #fff;
       }
 
+      @media (width < 1200px) {
+        header nav {
+          display: none; 
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          background-color: #333;
+          border: 5px solid #000;
+        }
+        
+        header nav.active {
+          display: block;
+        }
+
+        header .display-button.active {
+          background-color: white;
+        }
+
+        .display-button div.active {
+          background-color: #333;
+        }
+      }
+
+      
+
       @media (width > 1200px) {
         header {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          width: calc(100vh-10px);
+          width: 100%;
+        }
+
+        header .display-button {
+          display: none;
         }
 
         header ul {
@@ -130,19 +188,26 @@
   <body>
     <header>
       <div class="title">My Website</div>
-      <nav>
-        <ul>
-          <li>
-            <a href="">Link 1</a>
-          </li>
-          <li>
-            <a href="">Link 2</a>
-          </li>
-          <li>
-            <a href="">Link 3</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="menu">
+        <button class="display-button">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+        <nav>
+          <ul>
+            <li>
+              <a href="">Link 1</a>
+            </li>
+            <li>
+              <a href="">Link 2</a>
+            </li>
+            <li>
+              <a href="">Link 3</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -216,4 +281,5 @@
       </aside>
     </main>
   </body>
+  <script src="./js/functions.js"></script>
 </html>
