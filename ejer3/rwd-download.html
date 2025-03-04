@@ -102,20 +102,24 @@
           gap: 10px;
         }
 
+        article {
+          flex: 0 0 75%;
+        } 
+
         .cards {
           display: flex;
           width: 100%;
-          flex-wrap: wrap; 
-          gap: 10px; 
+          flex-wrap: wrap; /* Allows items to move to the next row */
+          gap: 10px; /* Adds spacing */
         }
 
         .cards li {
-          flex: 1 1 400px; 
-          max-width: 400px;
+          flex: 0 0 calc(33.33% - 10px); /* Adjust for gap */
+          max-width: 400px; /* Prevents cards from growing too large */
         }
 
         .sidebar {
-          width: 400px;
+          flex: 0 0 25%;
           margin-top: 10px;
         }
       }
