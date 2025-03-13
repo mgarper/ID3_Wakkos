@@ -28,47 +28,42 @@ body {
 }
 
 .white {
-    border: 1px solid white;
     color: white;
     background-color: white
 }
 
 .main--default-blue {
-    border-color: #1F83FF;
     background-color: #1F83FF;
 }
 
 .main--hover-blue {
-    border-color: #4D9CFF;
     background-color: #4D9CFF;
 }
 
 .main--click-blue {
-    border-color: #085FCA;
     background-color: #085FCA;
 }
 
 .main--disabled {
-    border-color: #E6E6E6;
     background-color: #E6E6E6
 }
 
 .secondary--default-blue {
-    border-color: #1F83FF;
+    outline: 1px solid #1F83FF;
     color: #1F83FF;
 }
 
 .secondary--hover-blue {
-    border-color: #4D9CFF;
+    outline: 1px solid #4D9CFF;
     color: #4D9CFF;
 }
 
 .secondary--click-blue {
-    border-color: #085FCA;
+    outline: 1px solid #085FCA;
     color: #085FCA;
 }
 
 .secondary--disabled {
-    border-color: #E6E6E6;
+    outline: 1px solid #E6E6E6;
     color: #E6E6E6
 }
