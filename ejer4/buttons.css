@@ -2,18 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    margin: 0 auto;
-}
-
-.grid {
-    display: flex;
-    gap: 20px;
-    padding: 12px 12px 12px 12px;
-    justify-content: center;
-    align-items: center;
-}
-
 .font {
     font-family: 'Poppins', sans-serif;
 }
