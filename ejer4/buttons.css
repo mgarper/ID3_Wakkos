@@ -4,66 +4,81 @@
 
 body {
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
 }
 
 .grid {
-    display: flex; /* Alinea las columnas en fila */
-    gap: 20px; /* Espacio entre columnas */
+    display: flex;
+    gap: 20px;
     padding: 12px 12px 12px 12px;
     justify-content: center;
     align-items: center;
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.font {
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn {
     padding: 12px 52px 12px 52px;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
 }
 
-.white {
+.btn--primary {
     color: white;
-    background-color: white
-}
-
-.main--default-blue {
     background-color: #1F83FF;
+
+    &:hover {
+        background-color: #4D9CFF;
+    }
+    
+    &:active {
+        background-color: #085FCA;
+    }
+    
+    &:disabled {
+        background-color: #E6E6E6;
+    }
 }
 
-.main--hover-blue {
-    background-color: #4D9CFF;
-}
-
-.main--click-blue {
-    background-color: #085FCA;
-}
-
-.main--disabled {
-    background-color: #E6E6E6
-}
-
-.secondary--default-blue {
-    outline: 1px solid #1F83FF;
+.btn--secondary {
+    outline: 2px solid #1F83FF;
     color: #1F83FF;
+
+    &:hover {
+        outline: 2px solid #4D9CFF;
+        color: #4D9CFF;
+    }
+    
+    &:active {
+        outline: 2px solid #085FCA;
+        color: #085FCA;
+    }
+    
+    &:disabled {
+        outline: 2px solid #E6E6E6;
+        color: #E6E6E6;
+    }
 }
 
-.secondary--hover-blue {
-    outline: 1px solid #4D9CFF;
-    color: #4D9CFF;
+.text-link {
+    color: #1F83FF;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        color: #4D9CFF;
+    }
+    
+    &:active {
+        color: #085FCA;
+    }
+    
+    &:disabled {
+        color: #E6E6E6;
+    }
 }
 
-.secondary--click-blue {
-    outline: 1px solid #085FCA;
-    color: #085FCA;
-}
-
-.secondary--disabled {
-    outline: 1px solid #E6E6E6;
-    color: #E6E6E6
-}
