@@ -1,16 +1,14 @@
-let card = document.querySelector('.modal')
-card.style.display = 'none'
+document.querySelector('.modal').card.style.display = 'none';
 
-setTimeout(() => {
-  card.style.display = 'block'
-}, 3000)
+document.querySelector('#modal--selector').addEventListener('click', () => {
+  document.querySelector('.modal').card.style.display = 'block'
+})
 
-document.querySelector('.btn--secondary').addEventListener('click', function() {
-  document.querySelector('.modal').style.display = 'none';
+document.querySelector('.modal .btn--secondary').addEventListener('click', function() {
+  document.querySelector('.modal').card.style.display = 'none';
 });
 
-document.querySelector('.btn--primary').addEventListener('click', function() {
+document.querySelector('.modal .btn--primary').addEventListener('click', function() {
     let modal = document.querySelector('.modal');
-    modal.className = 'modal modal--fullscreen'
     modal.innerHTML = '<h1>Course completed</h1><p>All attenders will soon be notified</p>';
 });
