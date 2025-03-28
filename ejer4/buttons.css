@@ -2,71 +2,78 @@
     box-sizing: border-box;
 }
 
-.font {
-    font-family: 'Poppins', sans-serif;
-}
-
 .btn {
-    padding: 12px 52px 12px 52px;
+    outline: none;
+    padding: 12px 52px;
     border-radius: 10px;
-    border: none;
+    font-size: 18px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: transparent;
+    color: hsl(213, 100%, 100%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.45;
     cursor: pointer;
-    transition: background-color 0.2s ease-in;
+    transition: background-color 0.2s;
 }
 
 .btn--primary {
     color: white;
-    background-color: #1F83FF;
+    background-color: var(--color-blue);
 
     &:hover {
-        background-color: #4D9CFF;
+        background-color: var(--color-blue-hover);
     }
     
     &:active {
-        background-color: #085FCA;
+        background-color: var(--color-blue-active);
     }
     
     &:disabled {
-        background-color: #E6E6E6;
+        background-color: var(--color-blue-disabled);
+        cursor: not-allowed;
     }
 }
 
 .btn--secondary {
-    outline: 2px solid #1F83FF;
-    color: #1F83FF;
+    border: 2px solid var(--color-blue);
+    color: var(--color-blue);
 
     &:hover {
-        outline: 2px solid #4D9CFF;
-        color: #4D9CFF;
+        border: 2px solid var(--color-blue-hover);
+        color: var(--color-blue-hover);
     }
     
     &:active {
-        outline: 2px solid #085FCA;
-        color: #085FCA;
+        border: 2px solid var(--color-blue-active);
+        color: var(--color-blue-active);
     }
     
     &:disabled {
-        outline: 2px solid #E6E6E6;
-        color: #E6E6E6;
+        border: 2px solid var(--color-blue-disabled);
+        color: var(--color-blue-disabled);
+        cursor: not-allowed;
     }
 }
 
 .text-link {
-    color: #1F83FF;
+    color: var(--color-blue);
     text-decoration: none;
     cursor: pointer;
     transition: background-color 0.2s ease-in;
 
     &:hover {
-        color: #4D9CFF;
+        color: var(--color-blue-hover);
     }
     
     &:active {
-        color: #085FCA;
+        color: var(--color-blue-active);
     }
     
     &:disabled {
-        color: #E6E6E6;
+        color: var(--color-blue-disabled);
     }
 }
 
