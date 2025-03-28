@@ -35,6 +35,7 @@ p {
 }
 
 .modal {
+    display: block;
     min-width: 800px;
     width: fit-content;
     background-color: #FFFFFF;

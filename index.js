@@ -1,3 +1,10 @@
+let card = document.querySelector('.modal')
+card.style.display = 'none'
+
+setTimeout(() => {
+  card.style.display = 'block'
+}, 3000)
+
 document.querySelector('.btn--secondary').addEventListener('click', function() {
   document.querySelector('.modal').style.display = 'none';
 });
